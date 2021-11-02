@@ -1,0 +1,14 @@
+spring:
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          asgardeo:
+            identityprovider:
+              entity-id: api.asgardeo.io/t/shamodya
+              verification.credentials:
+                - certificate-location: "classpath:cert/shamodya.cer"
+              singlesignon.url: https://api.asgardeo.io/t/shamodya/samlsso
+              singlesignon.sign-request: false
+
+
